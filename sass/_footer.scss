@@ -1,0 +1,125 @@
+.footer {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //  background-attachment: fixed;
+    height: 57.4375rem;
+    margin-top: 100px;
+    position: relative;
+    &_parallax {
+        // Style for "Слой 5"
+        width: 42.3125rem;
+        height: 51.375rem;
+        background: url(../img/parallax-ball.png) no-repeat;
+        position: absolute;
+        top: -30.75rem;
+        right: -20rem;
+        z-index: 10;
+        @media (max-width: 1600px) {
+            transform: scale(0.8);
+            top: -50rem;
+        }
+        @media (max-width: 1400px) {
+            transform: scale(0.6);
+            height: 59rem;
+            top: -60rem;
+        }
+        @media (max-width: 1200px) {
+            display: none!important;
+        }
+    }
+    //  &_bg {
+    //      position: absolute;
+    //      top: 0;
+    //      z-index: -1;
+    //      width: 100%;
+    //  }
+    &_title {
+        // Style for "я в социал"
+        color: #ffffff;
+        font-family: "Bebas Neue Bold";
+        font-size: 3rem;
+        font-weight: 400;
+        //  line-height: 1.1875rem;
+        text-transform: uppercase;
+        // Text style for "я в социал"
+        letter-spacing: 3.6px;
+        text-align: center;
+        padding-top: 7.5rem;
+        padding-bottom: 5rem;
+        margin: 0;
+    }
+    ul {
+        list-style-type: none;
+        width: 31.5rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0;
+        @media (max-width: 500px) {
+            justify-content: space-around;
+            width: auto;
+        }
+        li {
+            // Style for "Эллипс 1 к"
+            width: 5rem;
+            height: 5rem;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            text-align: center;
+            &:hover {
+                background-color: $white;
+                border: 2px solid transparent;
+            }
+            a {
+                display: block;
+                width: 5rem;
+                height: 5rem;
+                color: $white;
+                font-size: 1.5rem;
+                line-height: 3;
+                padding-right: 5px;
+                &:hover {
+                    color: #1E2639;
+                }
+            }
+        }
+    }
+    &_copy-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        transform: translateY(31rem);
+        @media (max-width: 1400px) {
+            width: 800px;
+            margin: 0 auto;
+            transform: translateY(30rem);
+        }
+        @media (max-width: 1200px) {
+            width: 600px;
+            // transform: translateY(26rem);
+        }
+        @media (max-width: 768px) {
+            width: auto;
+        }
+        @media (max-width: 400px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width: 345px) {
+            transform: translateY(28rem);
+        }
+    }
+    span {
+        // Style for "© 2019 Все"
+        opacity: 0.3;
+        color: #ffffff;
+        font-family: "Avenir Next Cyr";
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+    }
+}

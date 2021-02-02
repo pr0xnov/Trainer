@@ -1,0 +1,143 @@
+/** @format */
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 110px;
+  text-align: center;
+  @media (max-width: 992px) {
+    padding-top: 0;
+  }
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_title {
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    line-height: 2;
+  }
+  p {
+    padding-bottom: 40px;
+    color: #212f3d;
+    font-family: 'Avenir Next Cyr';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  small {
+    display: block;
+    // Style for "Нажимая на"
+    color: #6e837f;
+    font-family: 'Avenir Next Cyr';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    //  padding-top: 30px;
+    // Text style for "политикой"
+    @media (max-width: 992px) {
+      padding-top: 20px;
+    }
+    span {
+      text-decoration: underline;
+      a {
+        color: #6e837f;
+        font-family: 'Avenir Next Cyr';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+      }
+    }
+  }
+  &_name {
+    // Style for "Прямоуголь"
+    width: 361px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #eff4f3;
+    border-color: transparent;
+    @media (max-width: 500px) {
+      width: 280px;
+    }
+  }
+  &_phone {
+    // Style for "Прямоуголь"
+    width: 361px;
+    height: 65px;
+    border-radius: 10px;
+    background-color: #eff4f3;
+    border-color: transparent;
+    @media (max-width: 500px) {
+      width: 280px;
+    }
+  }
+  input[type='text'] {
+    padding-left: 26px;
+    font-family: 'Avenir Next Cyr';
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    &:focus::placeholder {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &::placeholder {
+      color: #6e837f;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+  }
+  input[placeholder='Ваше имя'] {
+    margin-bottom: 20px;
+  }
+  input {
+    outline: none;
+  }
+  &_input-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 764px;
+    justify-content: space-between;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+      width: 380px;
+    }
+    @media (max-width: 500px) {
+      width: 300px;
+    }
+  }
+  input[type='submit'] {
+    // Style for "Прямоуголь"
+    display: inline-block;
+    width: 20rem;
+    height: 4.6875rem;
+    // box-shadow: 0 12px 43px rgba(35, 220, 184, 0.31);
+    border-radius: 2.375rem;
+    border-color: transparent;
+    background-color: #23dcb8;
+    margin: 0;
+    margin-top: 2.4375rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    text-shadow: 0 2px 21px rgba(239, 255, 252, 0.46);
+    color: #ffffff;
+    font-family: 'Avenir Next Cyr';
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 3;
+    text-transform: uppercase;
+    outline: none;
+    &:hover {
+      background-color: lighten(#23dcb8, 5%);
+    }
+    &:focus {
+      background-color: darken(#23dcb8, 5%);
+    }
+  }
+}

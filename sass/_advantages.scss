@@ -1,0 +1,26 @@
+.advantages {
+    //  padding-top: 100px;
+    h2 {
+        text-align: center;
+    }
+    &_title {
+        // Style for "Новое обор"
+        max-width: 205px;
+        // height: 70px;
+        color: #212f3d;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: center;
+    }
+    &_item {
+        width: 265px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10px;
+    }
+}

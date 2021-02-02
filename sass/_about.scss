@@ -1,0 +1,96 @@
+.about {
+    margin-top: 150px;
+    @media (max-width: 992px) {
+        margin-top: 0;
+    }
+    &_wrapper {
+        position: relative;
+        // Style for "backround"
+        width: 1140px;
+        height: 673px;
+        background-color: #f8fbfa;
+        @media (max-width: 1250px) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &_img {
+        // Style for "img-woman"
+        width: 687px;
+        height: 706px;
+        position: absolute;
+        top: -33px;
+        left: -120px;
+        @media (max-width: 1200px) {
+            width: 100%;
+            left: -300px;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    &_text-wrapper {
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+    }
+    &_title {
+        padding-bottom: 10px;
+        padding-top: 80px;
+    }
+    &_text {
+        // Style for "У работы ф"
+        width: 437px;
+        color: #212f3d;
+        font-family: "Avenir Next Cyr";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        @media (max-width: 500px) {
+            font-size: 14px;
+            width: 260px;
+        }
+    }
+    &_btn {
+        // Style for "Прямоуголь"
+        margin-top: 6.25rem;
+        width: 16.4375rem;
+        height: 4.375rem;
+        border: 2px solid #28c4a6;
+        text-align: center;
+        // border-width: 3px;
+        // border-style: solid;
+        // border-image: linear-gradient(-241deg, #48d7bb 10%, #0eb595 100%);
+        // border-image: linear-gradient(to bottom, #86CB92 0%, transparent 40%, transparent 60%, #86CB92 100%);
+        // border-image-slice: 2;
+        border-radius: 2.1875rem;
+        // border-top-left-radius: 35px;
+        // border-top-right-radius: 33px;
+        transition: all .5s ease;
+        &:hover {
+            background-color: #28c4a6;
+            border: 2px solid transparent;
+        }
+        a {
+            display: block;
+            // Style for "Напишите м"
+            width: 16.4375rem;
+            height: 4.375rem;
+            text-shadow: 0 2px 21px rgba(239, 255, 252, 0.46);
+            color: #28c4a6;
+            font-family: "Avenir Next Cyr";
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 3.5;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

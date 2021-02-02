@@ -1,0 +1,218 @@
+.header {
+    position: relative;
+    height: 67.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 20.625rem;
+    background-image: url('../img/bg-header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #0e1d29;
+    //  background-attachment: fixed;
+    margin-bottom: 7.5rem;
+    &_parallax {
+        width: 40rem;
+        height: 40rem;
+        background: url(../img/dumbells.png) no-repeat;
+        // background-attachment: scroll;
+        position: absolute;
+        top: 53.125rem;
+        left: -18.125rem;
+        z-index: 5;
+        @media (max-width: 1600px) {
+            transform: scale(0.8);
+            width: 50rem;
+            height: 50rem;
+            left: -24rem;
+            top: 48rem;
+        }
+        @media (max-width: 1400px) {
+            transform: scale(0.6);
+            width: 53rem;
+            height: 50rem;
+            top: 35rem;
+        }
+        @media (max-width: 1200px) {
+            display: none!important;
+        }
+    }
+}
+
+//  .bg-img {
+//      position: absolute;
+//      width: 100%;
+//  }
+.logo {
+    a {
+        display: inline-block;
+        vertical-align: super;
+        // Style for "Наталья Ив"
+        height: 20px;
+        color: $white;
+        font-family: "Avenir Next Cyr";
+        font-size: 1.625rem;
+        font-weight: 500;
+        line-height: 1.6875rem;
+        padding-top: 2.5rem;
+        padding-right: 2.4375rem;
+        text-decoration: none;
+    }
+    small {
+        display: inline-block;
+        width: 1px;
+        height: 1.875rem;
+        background-color: $white;
+        opacity: 0.2;
+        margin-right: 2.4375rem;
+        @media (max-width: 327px) {
+            background-color: transparent;
+        }
+    }
+    span {
+        display: inline-block;
+        // Style for "Фитнес-тре"
+        width: 8.1875rem;
+        height: 2.125rem;
+        color: $white;
+        font-family: "Avenir Next Cyr";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.3125rem;
+    }
+}
+
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2.125rem;
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+    &_phone {
+        // Style for "8 800 234-"
+        // width: 152px;
+        // height: 16px;
+        color: $white;
+        font-family: "Avenir Next Cyr";
+        font-size: 1.25rem;
+        font-weight: 500;
+        // line-height: 19px;
+    }
+    &_social-icons {
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin-left: 0.8125rem;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                a {
+                    color: $white;
+                    &:hover {
+                        color: darken($white, 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-title {
+    // Style for "Тренировки"
+    // width: 641px;
+    // height: 296px;
+    max-width: 40.125rem;
+    color: #ffffff;
+    font-family: "Bebas Neue Bold";
+    font-size: 6.625em;
+    font-weight: 400;
+    line-height: 6.875rem;
+    // Text style for "Тренировки"
+    letter-spacing: 0.4969rem;
+    padding-top: 2.075rem;
+    margin-bottom: 3.125rem;
+    @media (max-width: 1700px) {
+        font-size: 5.3rem;
+        line-height: 5.4rem;
+        padding-top: 2rem;
+    }
+    @media (max-width: 400px) {
+        font-size: 4rem;
+    }
+}
+
+.subtitle {
+    // Style for "От тренера"
+    // width: 413px;
+    // height: 27px;
+    color: #ffffff;
+    font-family: "Avenir Next Cyr";
+    font-size: 1.6875rem;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    margin-top: 3.125rem;
+}
+
+.btn {
+    // Style for "Прямоуголь"
+    display: block;
+    margin-top: 5.625rem;
+    width: 20rem;
+    height: 4.6875rem;
+    box-shadow: 0 12px 43px rgba(35, 220, 184, 0.31);
+    border-radius: 2.375rem;
+    //  background-color: #23dcb8;
+    //  background-image: linear-gradient(to right, #0eb595 0%, #48d7bb 100%);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    a {
+        //Style for "Хочу на тр"
+        display: block;
+        width: 20rem;
+        height: 4.6875rem;
+        text-shadow: 0 2px 21px rgba(239, 255, 252, 0.46);
+        color: #ffffff;
+        font-family: "Avenir Next Cyr";
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 4.2;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(to left, #0eb595 0%, #48d7bb 100%);
+        border-radius: 30px;
+        z-index: -1;
+    }
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        border-radius: 30px;
+        z-index: -1;
+        background-image: linear-gradient(to left, #48d7bb 0%, #0eb595 100%);
+        transition: opacity .5s ease-in-out;
+    }
+    &:hover:after {
+        opacity: 1;
+    }
+    &:active:after {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,69 @@
+ @font-face {
+     font-family: 'Avenir Next Cyr Bold';
+     src: url('../fonts/AvenirNextCyr-Bold.eot');
+     src: url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Bold.woff') format('woff'), url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Avenir Next Cyr Regular';
+     src: url('../fonts/AvenirNextCyr-Regular.eot');
+     src: url('../fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/AvenirNextCyr-Regular.woff') format('woff'), url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'Bebas Neue Bold';
+     src: url('../fonts/BebasNeueBold.eot');
+     src: url('../fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeueBold.woff') format('woff'), url('../fonts/BebasNeueBold.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ html {
+     font-size: 16px;
+     @media (max-width: 1600px) {
+         font-size: 14px;
+     }
+     @media (max-width: 1400px) {
+         font-size: 12px;
+     }
+     @media (max-width: 1200px) {
+         font-size: 10px;
+     }
+ }
+ 
+ body {
+     margin: 0;
+     padding: 0;
+     //  padding-bottom: 500px;
+     // background-size: cover;
+     // background-repeat: no-repeat;
+     // background-position: center;
+     overflow-x: hidden;
+ }
+ 
+ .title {
+     color: #212f3d;
+     font-family: "Bebas Neue Bold";
+     font-size: 3rem;
+     font-weight: 400;
+     //  line-height: 1.1875rem;
+     text-transform: uppercase;
+     // Text style for "Почему сто"
+     letter-spacing: 3.6px;
+     padding-bottom: 5.625rem;
+ }
+ 
+ // Advantages Section
+ // About Section
+ // Subscribe Section
+ //  footer
+ @import 'colors';
+ @import 'header';
+ @import 'advantages';
+ @import 'about';
+ @import 'subscribe';
+ @import 'footer';
